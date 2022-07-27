@@ -7,13 +7,13 @@
 function Developer( name )
   {
     this.name = name
-    this.type = "Developer"
+    this.type = "DEV"
   }
 
 function Tester( name )
   {
     this.name = name
-    this.type = "Tester"
+    this.type = "QA"
   }
 
 function Say()
@@ -43,8 +43,8 @@ function EmployeeFactory()
 const employeeFactory = new EmployeeFactory()
 const employees = []
 
-employees.push( employeeFactory.create( "Guy" , 1 ) )
-employees.push( employeeFactory.create( "Other Guy" , 2 ) )
+employees.push( employeeFactory.create( "Guy" , 10 ) )
+employees.push( employeeFactory.create( "Other Guy" , 20 ) )
 
 employees.forEach( emp => 
   {
